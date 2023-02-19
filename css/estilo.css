@@ -1,0 +1,97 @@
+/* ============= Setup ============= */
+
+:root {
+    --black-161: #161513;
+    --purple-581: #581DEC;
+    --pink-ED4: #ED41DF;
+    --melon-FE9: #FE998D;
+}
+
+
+
+/* ============= General ============= */
+
+body {
+    background: url(../img/Background.png);
+    background-size: cover;
+    font-family: 'geomanistregular';
+    color: #fff;
+}
+
+li {
+    list-style-type: none;
+    display: inline;
+    vertical-align: middle;
+}
+
+.main_gradient {
+    background: linear-gradient(45deg, #581DEC 0%, #ED41DF 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+  
+.Second_gradient {
+    background: linear-gradient(45deg, #581DEC 0%, #FE998D, #ED41DF 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.display-5 {
+    font-family: 'pano_trial_boldbold';
+}
+
+
+
+/* ============= Botones ============= */
+
+.btn-primary {
+    padding: .5em;
+    background: linear-gradient(45deg, #581DEC 0%, #ED41DF 100%);
+    border-radius: 30px;
+    color: #fff;
+    border: none;
+}
+
+.btn-primary:hover {
+    background: linear-gradient(100deg, #581DEC 20%, #ED41DF 100%);
+    transition: all 2.5s;
+}
+
+.btn-outline-secondary {
+    padding: .5em;
+    border: 1px solid #ffffff;
+    border-radius: 30px;
+    color: #fff;
+}
+
+    /*Navbar Button */
+.btn-top { 
+    padding: .8em 2em;
+    border: 0;
+    background: linear-gradient(45deg, #581DEC 0%, #ED41DF 100%);
+    border-radius: 30px;
+    color: #fff;
+    font-family: 'geomanisbold'
+}
+
+
+
+
+/* ============= Nabvar Style ============= */
+
+.bd-navbar {
+    background-color: #161513;
+    box-shadow: 0 0.5rem 1rem rgb(0 0 0 / 15%), inset 0 -1px 0 rgb(0 0 0 / 15%);
+}
+
+nav a {
+    margin: 0 2em;
+}
+
+.navbar-nav {
+    padding-top: 4px;
+}
+
+

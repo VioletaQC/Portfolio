@@ -5,6 +5,7 @@
     /* Color Styles */
 
     --black-161: #161513;
+    --dark-1011: #101115
     --purple-581: #581DEC;
     --pink-ED4: #ED41DF;
     --melon-FE9: #FE998D;
@@ -116,7 +117,9 @@ nav a {
     padding: 4em 0;
 }
 
-
+.color-dark {
+    color: #7B7B7B;
+}
 
 
 
@@ -175,7 +178,6 @@ nav a {
         margin: auto;
     }
 
-
 }
 
 /* Mobile Version */
@@ -206,4 +208,13 @@ nav a {
         margin: auto;
     }
 
+    /* About Section */
+    .about__text {
+        text-align: center;
+        font-size: var(--text-min);
+    }
+
+    .about__img {
+        margin: auto;
+    }
 }

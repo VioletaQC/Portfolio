@@ -22,6 +22,9 @@
     
     <!--============= Navbar Section =============-->
 
+    <!--m:margin, p:padding  //  x:left/right, y:top/bot  //  t:top, b:bottom, l:left, r:right-->
+    <!-- 1: 0.25rem, 2: 0.5rem, 3: 1rem, 4:1.5rem, 5: 3rem-->
+
     <header class="page-header bd-navbar sticky-top">
         <nav class="navbar navbar-expand-lg navbar-dark">
             <div class="container">
@@ -30,22 +33,13 @@
                 </a>
 
                 <!-- Toggle Button [maneja la apertura del menú de la barra de navegación en las pantallas móviles]-->
-                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
 
-                <!-- Navbar Offcanvas [recopila componentes de la barra de navegación, como enlaces y formularios de la barra de navegación] -->
-                <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
-                    
-                    <!-- Navbar Brand -->
-                    <div class="offcanvas-header">
-                        <img src="./img/Logotipo.svg" alt="Logotipo VioletaQ">
-                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                    </div>
-
-                    <!-- Navbar Links -->
-                    <div class="offcanvas-body">
-                        <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
+                <!-- Navbar Links -->
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                             <li class="nav-item">
                             <a class="nav-link active" aria-current="page" href="#">Servicios</a></li>
                             <li class="nav-item">
@@ -57,64 +51,65 @@
                         <!-- Navbar Button -->
                         <a class="btn btn-primary btn-top" href="./pages/contacto.html">CONTÁCTAME</a>
                     </div>
-
                 </div>
             </div>
         </nav>
     </header>
     
+
 <main>
 
     <!--============= Hero Section =============-->
-    <!-- m:margin, p:padding  //  x:left/right, y:top/bot  //  t:top, b:bottom, l:left, r:right -->
-    <!-- 1: 0.25rem, 2: 0.5rem, 3: 1rem, 4:1.5rem, 5: 3rem-->
 
-    <div class="hero px-4 py-5 my-4 text-center">
+    <div class="container-fluid hero my-4 text-center">
 
-        <img class="d-block mx-auto mb-4" src="./img/Profile_vaporwave-style.png" alt="imagen musa estilo vaporwave" width="354" height="423">
+        <img class="d-block mx-auto mb-4 hero__img" src="./img/Profile.png" alt="imagen musa estilo vaporwave">
         
-        <h1 class="display-5 col-lg-8  mx-auto py-3">
+        <h1 class="display-5 col-xl-8 col-md-7 mx-auto">
             <span class="main_gradient">Hola, soy Violeta,</span>
             diseñadora y creativa ubicada en méxico</h1>
 
-        <div class="col-lg-6 mx-auto">
-            <p class="lead mb-4">Soy Diseñadora Gráfica, me especializo en el diseño UX/UI , Diseño Web Responsivo, diseño de identidades gráficas y dirección de arte. Amante de los tacos.</p>
+        <div class="text-regular col-xl-4 mx-auto">
+            <p class="mb-4">Soy Diseñadora Gráfica, me especializo en el diseño UX/UI , Diseño Web Responsivo, diseño de identidades gráficas y dirección de arte. Amante de los tacos.</p>
           
             <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
                 <a class="btn btn-primary btn-primary btn-lg px-4 gap-3" href="./pages/contacto.html">Contáctame</a>
                 <a class="btn btn-outline-secondary btn-lg px-4" href="./pages/proyectos.html">Ver Portafolio</a>
             </div>
         </div>
-
     </div>
 
 
+    <!--============= Services Section =============-->
 
-        <div class="services">
-            <div class="title">
-                <h1>Diseño centrado en</h1>
-                <h1>el usuario. Un</h1>
-                <h1><span class="Second_gradient">producto a la vez.</span></h1>
+    <div class="container services text-center">
+
+        <h1 class="display-5 col-xl-6 py-5 mx-auto">
+            Diseño centrado en el usuario. Un <span class="main_gradient"> producto a la vez.</span>
+        </h1>
+
+        <!-- Galería -->
+        <div class="servicios__img row gy-4 justify-content-center">
+            <div class="col-lg-5 col-md-11">
+                <img class="img-fluid" src="./img/img-servicios.png" alt="Servicio Diseño Gráfico">
             </div>
-
-            <div class="row">
-                <div class="col">
-                    <img src="./img/img-servicios.png" alt="Servicio Diseño Gráfico">
-                    <img src="./img/img-servicios.png" alt="Servicio Diseño UX/UI">
-                </div>
-                <div class="col">
-                    <img src="./img/img-servicios.png" alt="Servicio Branding">
-                    <img src="./img/img-servicios.png" alt="Servicio Página Web">
-                </div>
+            <div class="col-lg-5 col-md-11">
+                <img class="img-fluid" src="./img/img-servicios.png" alt="Servicio Diseño Gráfico">
             </div>
-
-            <div class="buttons">
-                <ul>
-                    <li><a href="./pages/contacto.html" class="button_select">Contáctame</a></li>
-                    <li><a href="./pages/servicios.html" class="button_rest">Ver mis Servicios</a></li>
-                </ul>
+            <div class="col-lg-5 col-md-11">
+                <img class="img-fluid" src="./img/img-servicios.png" alt="Servicio Diseño Gráfico">
+            </div>
+            <div class="col-lg-5 col-md-11">
+                <img class="img-fluid" src="./img/img-servicios.png" alt="Servicio Diseño Gráfico">
             </div>
         </div>
+
+        <div class="d-grid d-sm-flex py-5 justify-content-sm-center">
+            <a class="btn btn-primary btn-primary btn-lg px-4 gap-3" href="./pages/contacto.html">Ver mis Servicios</a>
+        </div>
+
+    </div>
+
 
         <div class="about">
             <div class="about_content">

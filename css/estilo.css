@@ -175,7 +175,6 @@ nav a {
         margin: auto;
     }
 
-
 }
 
 /* Mobile Version */
@@ -206,5 +205,13 @@ nav a {
         margin: auto;
     }
 
+    /* About Section */
+    .about__text {
+        text-align: center;
+        font-size: var(--text-min);
+    }
 
+    .about__img {
+        margin: auto;
+    }
 }

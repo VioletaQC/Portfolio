@@ -5,7 +5,7 @@
     /* Color Styles */
 
     --black-161: #161513;
-    --dark-1011: #101115
+    --dark-1011: #101115;
     --purple-581: #581DEC;
     --pink-ED4: #ED41DF;
     --melon-FE9: #FE998D;
@@ -38,12 +38,20 @@ li {
     list-style-type: none;
     display: inline;
     vertical-align: middle;
+    padding: 1em;
    }
+
 
 a {
     text-decoration: none;
+    color: #fff;
 }
    
+
+.bg__dark {
+    background-color: #101115;
+}
+
 
 .main_gradient {
     background: linear-gradient(45deg, #581DEC 0%, #ED41DF 100%);
@@ -123,11 +131,32 @@ nav a {
     padding: 4em 0;
 }
 
+/* ============= Portfolio Section ============= */
+
 .color-dark {
     color: #7B7B7B;
 }
 
+.strong__elsword {
+    font-family: 'geomanisbold';
+    color: #CD150F;
+}
 
+.strong__floryquelite {
+    font-family: 'geomanisbold';
+    color: #01583F;  
+}
+
+.strong__petzbook {
+    font-family: 'geomanisbold';
+    color: #E76E29;    
+}
+
+/* ============= Footer ============= */
+
+.footer__background {
+    background: linear-gradient(90deg, #161513 0%, #101115 100%);
+}
 
 
 

@@ -38,7 +38,7 @@ li {
     list-style-type: none;
     display: inline;
     vertical-align: middle;
-    padding: 1em;
+    padding: .5em;
    }
 
 
@@ -96,17 +96,6 @@ a {
     color: #fff;
 }
 
-    /*Navbar Button */
-.btn-top { 
-    padding: .8em 2em;
-    border: 0;
-    background: linear-gradient(45deg, #581DEC 0%, #ED41DF 100%);
-    border-radius: 30px;
-    color: #fff;
-    font-family: 'geomanisbold'
-}
-
-
 
 
 /* ============= Nabvar Style ============= */
@@ -116,12 +105,17 @@ a {
     box-shadow: 0 0.5rem 1rem rgb(0 0 0 / 15%), inset 0 -1px 0 rgb(0 0 0 / 15%);
 }
 
-nav a {
-    margin: 0 2em;
+a {
+    margin: 0 1em;
 }
 
-.navbar-nav {
-    padding-top: 4px;
+.btn-top { 
+    padding: .8em 2em;
+    border: 0;
+    background: linear-gradient(45deg, #581DEC 0%, #ED41DF 100%);
+    border-radius: 30px;
+    color: #fff;
+    font-family: 'geomanisbold'
 }
 
 
@@ -155,7 +149,7 @@ nav a {
 /* ============= Footer ============= */
 
 .footer__background {
-    background: linear-gradient(90deg, #161513 0%, #101115 100%);
+    background: linear-gradient(180deg, #181715 0%, #101115 100%);
 }
 
 

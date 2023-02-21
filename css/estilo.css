@@ -38,7 +38,12 @@ li {
     list-style-type: none;
     display: inline;
     vertical-align: middle;
+   }
+
+a {
+    text-decoration: none;
 }
+   
 
 .main_gradient {
     background: linear-gradient(45deg, #581DEC 0%, #ED41DF 100%);
@@ -47,7 +52,7 @@ li {
     -webkit-text-fill-color: transparent;
 }
   
-.Second_gradient {
+.second_gradient {
     background: linear-gradient(45deg, #581DEC 0%, #FE998D, #ED41DF 100%);
     background-clip: text;
     -webkit-background-clip: text;
@@ -92,6 +97,7 @@ li {
     color: #fff;
     font-family: 'geomanisbold'
 }
+
 
 
 

@@ -49,7 +49,7 @@ a {
    
 
 .bg__dark {
-    background-color: #101115;
+    background-color: #161513;
 }
 
 
@@ -61,7 +61,7 @@ a {
 }
   
 .second_gradient {
-    background: linear-gradient(45deg, #581DEC 0%, #FE998D, #ED41DF 100%);
+    background: linear-gradient(90deg, #581DEC 0%, #FE998D, #ED41DF 100%);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -146,10 +146,28 @@ a {
     color: #E76E29;    
 }
 
+
 /* ============= Footer ============= */
 
 .footer__background {
     background: linear-gradient(180deg, #181715 0%, #101115 100%);
+}
+
+
+/* ============= Form Section ============= */
+
+.form-control {
+    background-color: #1C1C22;
+    border: none;
+    height: 50px;
+}
+
+.form-control::placeholder {
+    color: #6B7175;
+}
+
+textarea.form-control {
+    height: 120px;
 }
 
 

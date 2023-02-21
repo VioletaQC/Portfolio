@@ -4,113 +4,152 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="../css/estilo.css">
-    <link rel="stylesheet" type="text/css" href="../css/normalize.css">
-    <link rel="stylesheet" href="../Typo/Geomanist/stylesheetgeo.css" type="text/css" charset="utf-8" />
-    <link rel="stylesheet" href="../Typo/Geomanist-Bold/stylesheetgeobold.css" type="text/css" charset="utf-8" />
-    <link rel="stylesheet" href="../Typo/PanoBold/stylesheetpano.css" type="text/css" charset="utf-8" />
+
+    <!-- Tipografías Locales -->
+    <link rel="stylesheet" href="../typo/geomanist/stylesheetgeo.css" type="text/css" charset="utf-8" />
+    <link rel="stylesheet" href="../typo/geomanist-bold/stylesheetgeobold.css" type="text/css" charset="utf-8" />
+    <link rel="stylesheet" href="../typo/panobold/stylesheetpano.css" type="text/css" charset="utf-8" />
+    <!-- Boxicons CSS -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="icon" href="../img/616430.ico">
-    <title>Contacto</title>
+    <title>Holi</title>
+
+    <!-- Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="../css/estilo.css">
 </head>
 
 <body>
-    <header> 
-        <!--Barra de navegación y logotipo-->
-        <a href="../index.html"><img src="../img/Logotipo.svg">
+    
+    <!--============= Navbar Section =============-->
 
-        <nav>
-            <ul>
-                <li><a class="link" href="../pages/servicios.html">Servicios</a></li>
-                <li><a class="link" href="../pages/proyectos.html">Proyectos</a></li>
-                <li><a class="link" href="../pages/acerca-de.html">Sobre Mi</a></li>
-            </ul>
+    <header class="page-header bd-navbar sticky-top">
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container">
+                <a class="navbar-brand" href="../index.html">
+                    <img src="../img/Logotipo.svg" alt="Logotipo VioletaQ">
+                </a>
+
+                <!-- Toggle Button [maneja la apertura del menú de la barra de navegación en las pantallas móviles]-->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Navbar Links -->
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="../pages/servicios.html">Servicios</a></li>
+                            <li class="nav-item">
+                            <a class="nav-link" href="../pages/proyectos.html">Proyectos</a></li>
+                            <li class="nav-item">
+                            <a class="nav-link" href="../pages/acerca-de.html">Sobre Mí</a></li>
+                    </ul>
+
+                        <!-- Navbar Button -->
+                    <a class="btn btn-primary btn-top" href="./pages/contacto.html">CONTÁCTAME</a>
+                </div>
+            </div>
         </nav>
-
-        <a class="button_top" href="../pages/contacto.html">CONTÁCTAME</a>
     </header>
 
 <main>
-    <article class="contact_container">
-        <div class="contact_info">
-            <div class="contact_title">
-                <h1><span class="Second_gradient">Trabajemos</span> juntos ;)</h1>
-            </div>
-            
-            <div class="contact_p">
-                <p>¿Tienes algún proyecto en mente? ¿Estás buscando un compañero o deseas que trabajemos juntos? Envíame tus datos mediante el formulario y estaré en contacto contigo durante las próximas 48 horas.</p>
-            </div>
-        
-        
-            <div class="contact_social">
-                <a href="https://www.linkedin.com/in/violetaquintana/">
-                    <img src="../img/icon_linkedin.png">
-                </a>
-                <a href="https://github.com">
-                    <img src="../img/icon_github.png">
-                </a>
-                <a href="https://www.behance.net/violetaquintana">
-                    <img src="../img/icon_behance.png">
-                </a>
-            </div>
+
+    <!--============= Página Contacto =============-->
+    
+    <div class="container col-xl-10 col-xxl-9 px-4 py-5">
+
+        <!-- Texto izquierda -->
+        <div class="row align-items-center g-lg-2 py-5">
+          <div class="col-lg-6 text-center text-lg-start">
+            <h1 class="display-5 col-lg-9 pb-3 lh-2 fw-bold mb-3">
+                <span class="second_gradient">Trabajemos</span> juntos ;)</h1>
+            <p class="col-lg-8 fs-6">
+                ¿Tienes algún super proyecto en mente? Envíame tus datos mediante el formulario 
+                y estaré en contacto contigo durante las próximas 48 horas.
+            </p>
         </div>
 
-        <!--Formulario-->
-        <div class="form_container">
-            <div class="form_item">
-                <form action="">
-                    <label for="Nombre" class="formtypo">Nombre</label>
-                    <input type="text" class="field" placeholder="Ingrese su nombre">
-        
-                    <label for="email" class="formtypo">Correo electrónico</label>
-                    <input type="email" class="field" placeholder="Ingrese su correo electrónico">
+        <!-- Formulario -->
+        <div class="col-md-10 mx-auto col-lg-5">
+            <form class="p-4 p-md-5 rounded-3 bg__dark">
 
-                    <label for="Nombre" class="formtypo">Su Presupuesto</label>
-                    <input type="text" class="field" placeholder="Su presupuesto">
-        
-                    <label for="Nombre" class="formtypo">Cuéntame un poco más sobre su proyecto</label>
-                    <textarea class="field"></textarea>
-        
-                    <input type="submit" value="Enviar" class="button_center">
-                </form>
-            </div>
+                <div class="mb-2">
+                    <label for="name" class="form-label">Nombre</label>
+                    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Ingrese su nombre" autocomplete="off">
+                </div>
+
+                <div class="mb-2">
+                    <label for="email" class="form-label">Correo electrónico</label>
+                    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder=" Ingrese su correo electrónico">
+                </div>
+
+                <div class="mb-2">
+                    <label for="name" class="form-label">Presupuesto</label>
+                    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Presupuesto">
+                </div>
+
+                <div class="mb-5">
+                    <label for="exampleFormControlTextarea1" class="form-label">Cuéntame un poco más sobre tu proyecto</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                  </div>
+
+
+                <button class="w-100 btn btn-lg btn-primary" type="submit">Enviar</button>
+            </form>
+          </div>
         </div>
-    </section>
+      </div>
 </main>
 
-<footer>
-    <div class="footer_content">
-        <div class="separador">
-            <hr> 
+<footer class="footer__background border-top pt-2">
+    <div class="container pt-5">
+        <div class="row justify-content-center">
+            <div class="col-md-12 text-center">
+                <a href="#"><img class="img-fluid pb-4" src="../img/Logotipo.svg" width="160px"></a>
+                
+                <ul class="list-inline">
+                    <li class="list-inline-item"><a href="#">Servicios</a></li>
+                    <li class="list-inline-item"><a href="#">Proyectos</a></li>
+                    <li class="list-inline-item"><a href="#">Sobre Mi</a></li>
+                    <li class="list-inline-item"><a href="#">Contacto</a></li>
+                </ul>
+            </div>
+
+            <div class="row justify-content-center text-center gap-3 pt-4">
+
+                <div class="col-1">
+                    <a href="https://www.linkedin.com/in/violetaquintana/">
+                        <i class='bx bxl-linkedin-square bx-md' style='color:#ffffff' ></i>
+                    </a>
+                </div>
+
+                <div class="col-1">
+                    <a href="https://github.com">
+                        <i class="bx bxl-github bx-md" style="color:#ffffff"></i>
+                    </a>
+                </div>
+
+                <div class="col-1">
+                    <a href="https://www.behance.net/violetaquintana">
+                        <i class='bx bxl-behance bx-md' style='color:#ffffff' ></i>
+                    </a>
+                </div>
+            </div>
         </div>
 
-        <div class="footer_nav">
-            <a href="../index.html">
-                <img src="../img/Logotipo.svg" alt="logotipo">
-            </a>
-            <ul>
-                <li><a href="../pages/servicios.html">Servicios</a></li>
-                <li><a href="../pages/proyectos.html">Proyectos</a></li>
-                <li><a href="../pages/contacto.html">Contacto</a></li>
-            </ul>
-        </div>
-
-        <div class="footer_icons">
-            <a href="https://www.linkedin.com/in/violetaquintana/">
-                <img src="../img/icon_linkedin.png" alt="linkedin">
-            </a>
-            <a href="https://github.com">
-                <img src="../img/icon_github.png" alt="github">
-            </a>
-            <a href="https://www.behance.net/violetaquintana">
-                <img src="../img/icon_behance.png" alt="behance">
-            </a>
-        </div>
-
-        <div class="copyright">
-        <p>Copyright © 2023 Violeta Quintana, Todos los derechos reservados.</p>
+        <div class="row mt-5">
+            <div class="col-md-12 text-center">
+                <p class="copyright">
+                    Copyright ©<script>document.write(new Date().getFullYear());</script> Todos los derechos reservados 
+                    | Esta página está hecha con <i class='bx bxs-heart' style='color:#ffffff'></i> y tacos.</a>
+                </p>
+            </div>
         </div>
     </div>
 </footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    
 </body>
 </html>

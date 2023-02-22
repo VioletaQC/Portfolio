@@ -72,6 +72,9 @@ a {
     font-size: var(--header-1);
 }
 
+.text__color {
+    color: var(--pink-ED4);
+}
 
 
 /* ============= Botones ============= */
@@ -171,6 +174,12 @@ textarea.form-control {
 }
 
 
+/* ============= About Section ============= */
+
+.team__text {
+    padding-top: 15em;
+}
+
 
 /* Desktop lg Version */
 
@@ -197,6 +206,7 @@ textarea.form-control {
         margin: auto;
     }
 
+    
 }
 
 

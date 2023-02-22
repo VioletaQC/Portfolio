@@ -180,6 +180,11 @@ textarea.form-control {
     padding-top: 15em;
 }
 
+.team__hr {
+    height: 20px;
+    border: none;
+    background: linear-gradient(90deg, #581DEC 0%, #FE998D, #ED41DF 100%);
+} 
 
 /* Desktop lg Version */
 

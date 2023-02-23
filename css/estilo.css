@@ -186,6 +186,13 @@ textarea.form-control {
     background: linear-gradient(90deg, #581DEC 0%, #FE998D, #ED41DF 100%);
 } 
 
+.portfolio__item:hover {
+    transform: scale(1.03);
+    transition: all 0.3s;
+}
+
+
+
 /* Desktop lg Version */
 
 @media (max-width: 992px) {

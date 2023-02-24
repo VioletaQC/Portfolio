@@ -208,9 +208,16 @@ textarea.form-control {
     transition: all 0.3s;
 }
 
+
+.oops img {
+    width: 30%;
+}
+
 /* Desktop xl Version */
 
 @media (max-width: 1440px) {
+
+    /* Services Section */
 
     .carousel_petzbook img {
         margin-left: -20%;
@@ -251,6 +258,8 @@ textarea.form-control {
         margin: auto;
     }
 
+    /* Services Section */
+
     .carousel_petzbook img {
         margin-left: -60%;
     }
@@ -290,6 +299,8 @@ textarea.form-control {
         width: 80%;
         margin: auto;
     }
+
+    /* Services Section */
 
     .carousel_petzbook img {
         margin-left: -80%;
@@ -342,6 +353,8 @@ textarea.form-control {
     .about__img {
         margin: auto;
     }
+
+    /* Services Section */
 
     .carousel_petzbook img {
         margin-left: -250%;

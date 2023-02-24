@@ -14,7 +14,7 @@
 
     --header-1: 3em;
     --header-2: 2.3em;
-    --header-3: 2em;
+    --header-3: 3.2em;
     --header-4: 1.6em;
 
     --text-regular: 1em;
@@ -72,6 +72,15 @@ a {
     font-size: var(--header-1);
 }
 
+.display-4 {
+    font-family: 'geomanisbold';
+    font-size: var(--header-3);
+    text-shadow: #1C1C22 0 0 0.1em,
+    0px 10px 10px rgba(0,0,0,0.15),
+    0px 15px 15px rgba(0,0,0,0.1),
+    0px 20px 20px rgba(0,0,0,0.1);
+}
+
 .text__color {
     color: var(--pink-ED4);
 }
@@ -118,7 +127,7 @@ a {
     background: linear-gradient(45deg, #581DEC 0%, #ED41DF 100%);
     border-radius: 30px;
     color: #fff;
-    font-family: 'geomanisbold'
+    font-family: 'geomanisbold';
 }
 
 
@@ -156,6 +165,14 @@ a {
     background: linear-gradient(180deg, #181715 0%, #101115 100%);
 }
 
+.bx {
+    color: #fff;
+}
+
+.copyright {
+    color: #6B7175;
+    font-size: var(--text-min);
+}
 
 /* ============= Form Section ============= */
 
@@ -191,7 +208,23 @@ textarea.form-control {
     transition: all 0.3s;
 }
 
+/* Desktop xl Version */
 
+@media (max-width: 1440px) {
+
+    .carousel_petzbook img {
+        margin-left: -20%;
+    }
+
+    .carousel_book img {
+        margin-left: -18%;
+    }
+
+    .carousel_els img {
+        margin-left: -18%;
+    }
+
+}
 
 /* Desktop lg Version */
 
@@ -218,6 +251,17 @@ textarea.form-control {
         margin: auto;
     }
 
+    .carousel_petzbook img {
+        margin-left: -60%;
+    }
+
+    .carousel_book img {
+        margin-left: -40%;
+    }
+
+    .carousel_els img {
+        margin-left: -46%;
+    }
     
 }
 
@@ -245,6 +289,18 @@ textarea.form-control {
     .text-regular p {
         width: 80%;
         margin: auto;
+    }
+
+    .carousel_petzbook img {
+        margin-left: -80%;
+    }
+
+    .carousel_book img {
+        margin-left: -60%;
+    }
+
+    .carousel_els img {
+        margin-left: -70%;
     }
 
 }
@@ -285,5 +341,17 @@ textarea.form-control {
 
     .about__img {
         margin: auto;
+    }
+
+    .carousel_petzbook img {
+        margin-left: -250%;
+    }
+
+    .carousel_book img {
+        margin-left: -120%;
+    }
+
+    .carousel_els img {
+        margin-left: -170%;
     }
 }

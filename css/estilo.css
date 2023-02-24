@@ -208,10 +208,13 @@ textarea.form-control {
     transition: all 0.3s;
 }
 
-
 .oops img {
     width: 30%;
 }
+
+
+
+/* ============= Media Queries ============= */
 
 /* Desktop xl Version */
 

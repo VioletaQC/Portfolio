@@ -1,0 +1,14 @@
+
+.form-control {
+    background-color: #1C1C22;
+    border: none;
+    height: 50px;
+}
+
+.form-control::placeholder {
+    color: #6B7175;
+}
+
+textarea.form-control {
+    height: 120px;
+}

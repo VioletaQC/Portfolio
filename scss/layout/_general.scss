@@ -1,0 +1,55 @@
+
+body {
+    background: url(../img/Background.png);
+    background-size: cover;
+    font-family: $geomanist-r;
+    color: $white;
+}
+
+li {
+    list-style-type: none;
+    display: inline;
+    vertical-align: middle;
+    padding: .5em;
+}
+
+a {
+    text-decoration: none;
+    color: $white;
+    margin: 0 1em;
+}
+  
+.bg__dark {
+    background-color: $primary-black;
+}
+
+.main_gradient {
+    background: $gradiente-lineal-1;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+  
+.second_gradient {
+    background: $gradiente-lineal-2;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.display-5 {
+    font-family: $pano;
+    span {
+        font-family: $pano;
+    }
+}
+
+.display-4 {
+    font-family: $geomanist-b;
+    font-size: $header-3;
+    text-shadow: $text-shadow;
+}
+
+.text__color {
+    color: $main-pink;
+}

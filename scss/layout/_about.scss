@@ -1,0 +1,21 @@
+.team__text {
+  padding-top: 15em;
+}
+
+.team__hr {
+  height: 20px;
+  border: none;
+  background: $gradiente-lineal-2;
+}
+
+.portfolio__item:hover {
+  transform: scale(1.03);
+  transition: all 0.3s;
+}
+
+.oops {
+  img {
+    width: 30%;
+  }
+}
+

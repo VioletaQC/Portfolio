@@ -1,0 +1,19 @@
+/* ============= Setup ============= */
+
+@import './root/colors';
+@import './root/fonts';
+@import './root/gradient';
+
+
+/* ============= Layout ============= */
+
+@import './layout/general';
+@import './layout/navbar';
+@import './layout/home';
+@import './layout/footer';
+@import './layout/about';
+
+/* ============= Componentes ============= */
+
+@import './componentes/buttons';
+@import './componentes/form';

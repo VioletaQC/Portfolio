@@ -1,0 +1,29 @@
+/* ============= Hero Section ============= */
+
+.hero {
+    padding: 4em 0;
+}
+
+/* ============= Portfolio Section ============= */
+
+.color-dark {
+    color: $tertiary-dark;
+}
+
+
+.display-6 {
+    .strong__elsword {
+        font-family: $geomanist-b;
+        color: #CD150F;
+    }
+
+    .strong__floryquelite {
+        font-family: $geomanist-b;
+        color: #01583F;
+    }
+
+    .strong__petzbook {
+        font-family: $geomanist-b;
+        color: #E76E29;
+    }
+}

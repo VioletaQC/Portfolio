@@ -1,0 +1,10 @@
+/* ====== angulos para gradientes ====== */
+
+$angulo-1: 45deg;
+$angulo-2: 90deg;
+
+$gradiente-lineal-1: 
+linear-gradient($angulo-1, $main-purple 0%, $main-pink 100%);
+
+$gradiente-lineal-2: 
+linear-gradient($angulo-2, $main-purple 0%, $main-melon, $main-pink 100%);

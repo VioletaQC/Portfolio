@@ -1,3 +1,6 @@
+@import '../root/mixins';
+
+/* ============= Setup CSS ============= */
 
 body {
     background: url(../img/Background.png);
@@ -23,33 +26,20 @@ a {
     background-color: $primary-black;
 }
 
-.main_gradient {
-    background: $gradiente-lineal-1;
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-  
-.second_gradient {
-    background: $gradiente-lineal-2;
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
+/* ============= h1 ============= */ 
 
 .display-5 {
     font-family: $pano;
-    span {
-        font-family: $pano;
+
+    .main_gradient {
+        @include text-gradient ($main-gradient, text, text, transparent);
     }
-}
 
-.display-4 {
-    font-family: $geomanist-b;
-    font-size: $header-3;
-    text-shadow: $text-shadow;
-}
+    .second_gradient {
+        @include text-gradient ($second-gradient, text, text, transparent);
+    }
 
-.text__color {
-    color: $main-pink;
+    .span_pink {
+        color: $main-pink;
+    }
 }

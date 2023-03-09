@@ -1,35 +1,26 @@
+@import '../root/mixins';
+
+/* ============= Botones ============= */
+
 .btn-top { 
-    padding: .8em 2em;
-    border: 0;
-    background: linear-gradient(45deg, $main-purple 0%, $main-pink 100%);
-    border-radius: 30px;
-    color: $white;
+    @include button (.5em 2em, none, 30px, $white, $main-gradient);
     font-family: $geomanist-b;
   
     &:hover {
-        background: linear-gradient(100deg, $main-purple 20%, $main-pink 100%);
-        transition: all 2.5s;
+        @include btn-hover ($hover-gradient, all 2.5s)
     }
 }
 
 .btn-primary {
-    padding: .5em;
-    background: linear-gradient(45deg, $main-purple 0%, $main-pink 100%);
-    border-radius: 30px;
-    color: $white;
-    border: none;
+    @include button (.5em, none, 30px, $white, $main-gradient);
   
     &:hover {
-        background: linear-gradient(100deg, $main-purple 20%, $main-pink 100%);
-        transition: all 2.5s;
+        @include btn-hover ($hover-gradient, all 2.5s)
     }
 }
 
 .btn-outline-secondary {
-    padding: .5em;
-    border: 1px solid $white;
-    border-radius: 30px;
-    color: $white;
+    @include button (.5em, 1px solid $white, 30px, $white, none);
 }
 
   

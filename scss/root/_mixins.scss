@@ -1,0 +1,25 @@
+
+@mixin text-gradient ($gradient, $text, $clip, $fill) {
+    background: $gradient;
+    background-clip: $text;
+    -webkit-background-clip: $clip;
+    -webkit-text-fill-color: $fill;
+}
+
+@mixin button ($padding, $border, $radius, $color, $back) {
+    padding: $padding;
+    border: $border;
+    border-radius: $radius;
+    color: $color;
+    background: $back;
+}
+
+@mixin btn-hover ($background, $transition) {
+    background: $background;
+    transition: $transition;
+}
+
+@mixin strong-text ($family, $color) {
+    font-family: $family;
+    color: $color;
+}

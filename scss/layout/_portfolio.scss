@@ -1,0 +1,11 @@
+
+/* ============= Portfolio Page ============= */
+
+div {
+    .portfolio__item {
+        &:hover {
+            transform: scale(1.03);
+            transition: all 0.3s;
+        }
+    }
+}

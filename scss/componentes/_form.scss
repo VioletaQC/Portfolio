@@ -1,14 +1,18 @@
 
-.form-control {
-    background-color: #1C1C22;
-    border: none;
-    height: 50px;
-}
+/* ============= Formulario ============= */
 
-.form-control::placeholder {
-    color: #6B7175;
-}
+div {
+    .form-control {
+        background-color: #1C1C22;
+        border: none;
+        height: 50px;
 
-textarea.form-control {
-    height: 120px;
+        &::placeholder {
+            color: #6B7175;
+        }
+    }
+
+    .textarea {
+        height: 120px;
+    }
 }

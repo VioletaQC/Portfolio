@@ -8,12 +8,13 @@
 /* ============= Layout ============= */
 
 @import './layout/general';
-@import './layout/navbar';
 @import './layout/home';
-@import './layout/footer';
 @import './layout/about';
+@import './layout/portfolio';
 
 /* ============= Componentes ============= */
 
+@import './componentes/navbar';
 @import './componentes/buttons';
 @import './componentes/form';
+@import './componentes/footer';

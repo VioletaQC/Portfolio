@@ -1,10 +1,17 @@
-/* ====== angulos para gradientes ====== */
 
 $angulo-1: 45deg;
 $angulo-2: 90deg;
+$angulo-3: 100deg;
+$angulo-4: 180deg;
 
-$gradiente-lineal-1: 
+$main-gradient: 
 linear-gradient($angulo-1, $main-purple 0%, $main-pink 100%);
 
-$gradiente-lineal-2: 
+$second-gradient: 
 linear-gradient($angulo-2, $main-purple 0%, $main-melon, $main-pink 100%);
+
+$footer-gradient:
+linear-gradient($angulo-4, $primary-black 0%, $secondary-dark 100%);
+
+$hover-gradient:
+linear-gradient($angulo-3, $main-purple 20%, $main-pink 100%);

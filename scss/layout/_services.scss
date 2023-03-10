@@ -1,3 +1,5 @@
+@import '../componentes/responsive';
+
 /* ============= Services page ============= */
 
 .display-4 { 
@@ -5,3 +7,81 @@
     font-size: $header-3;
     text-shadow: $text-shadow;
 }
+
+/* -- Petzbook -- */
+.carousel_petzbook {
+    img {
+        @include media(sm) {
+            margin-left: -168%;
+        }
+
+        @include media(md) {
+            margin-left: -67%;
+        }
+
+        @include media(lg) {
+            margin-left: -46%;
+        }
+
+        @include media(xl) {
+            margin-left: -33%;
+        }
+
+        @include media(xxl) {
+            margin: auto;
+        }
+    }
+}
+
+/* -- Recetario -- */
+.carousel_book {
+    img {
+        @include media(sm) {
+            margin-left: -120%;
+        }
+
+        @include media(md) {
+            margin-left: -58%;
+        }
+
+        @include media(lg) {
+            margin-left: -44%;
+        }
+
+        @include media(xl) {
+            margin-left: -33%;
+        }
+
+        @include media(xxl) {
+            margin: auto;
+        }
+    }
+}
+
+/* -- Elsword -- */
+.carousel_els {
+    img {
+        @include media(sm) {
+            margin-left: -140%;
+        }
+
+        @include media(md) {
+            margin-left: -67%;
+        }
+
+        @include media(lg) {
+            margin-left: -44%;
+        }
+
+        @include media(xl) {
+            margin-left: -33%;
+        }
+
+        @include media(xxl) {
+            margin: auto;
+        }
+    }
+}
+
+
+    

@@ -1,4 +1,5 @@
 @import '../root/mixins';
+@import '../componentes/responsive';
 
 /* ============= Setup CSS ============= */
 
@@ -26,7 +27,7 @@ a {
     background-color: $primary-black;
 }
 
-/* ============= h1 ============= */ 
+/* ============= Text ============= */ 
 
 .display-5 {
     font-family: $pano;
@@ -41,5 +42,34 @@ a {
 
     .span_pink {
         color: $main-pink;
+    }
+
+    @include large {
+        font-size: $header-1;
+        width: 95%;
+    }
+
+    @include tablet {
+        font-size: $header-2;
+        width: 95%;
+    }
+
+    @include mobile {
+        font-size: $header-4;
+    }
+}
+
+.text_regular {
+    p {
+        @include large {
+            width: 80%;
+            margin: auto;    
+        }
+
+        @include mobile {
+        font-size: $text-min;
+        width: 77%;
+        margin: auto;
+        }
     }
 }

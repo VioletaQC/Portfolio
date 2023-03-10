@@ -1,5 +1,9 @@
+@charset "UTF-8";
 /* ============= Setup ============= */
 /* ============= Layout ============= */
+/* ============= Media Querie ============= */
+/* Método 1 e.e */
+/* Método 2 a.e */
 /* ============= Setup CSS ============= */
 body {
   background: url(../img/Background.png);
@@ -25,7 +29,7 @@ a {
   background-color: #161513;
 }
 
-/* ============= h1 ============= */
+/* ============= Text ============= */
 .display-5 {
   font-family: "pano_trial_boldbold";
 }
@@ -44,10 +48,84 @@ a {
 .display-5 .span_pink {
   color: #ED41DF;
 }
+@media screen and (max-width: 1024px) {
+  .display-5 {
+    font-size: 3em;
+    width: 95%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .display-5 {
+    font-size: 2.3em;
+    width: 95%;
+  }
+}
+@media screen and (max-width: 375px) {
+  .display-5 {
+    font-size: 1.8em;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .text_regular p {
+    width: 80%;
+    margin: auto;
+  }
+}
+@media screen and (max-width: 375px) {
+  .text_regular p {
+    font-size: 0.9em;
+    width: 77%;
+    margin: auto;
+  }
+}
 
 /* ============= Hero Section ============= */
 .hero {
   padding: 4em 0;
+}
+@media screen and (max-width: 1024px) {
+  .hero {
+    padding: 1em 0;
+  }
+}
+@media screen and (max-width: 375px) {
+  .hero {
+    padding: 0.2em 0;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .hero__img {
+    width: 320px;
+    height: auto;
+    padding-bottom: 1em;
+  }
+}
+@media screen and (max-width: 768px) {
+  .hero__img {
+    width: 280px;
+    height: auto;
+    padding-bottom: 1em;
+  }
+}
+@media screen and (max-width: 375px) {
+  .hero__img {
+    max-width: 60%;
+    margin-bottom: none;
+  }
+}
+
+/* ============= About Section ============= */
+@media screen and (max-width: 375px) {
+  .about__text {
+    text-align: center;
+    font-size: 0.9em;
+  }
+}
+@media screen and (max-width: 375px) {
+  .about__img {
+    margin: auto;
+  }
 }
 
 /* ============= Casos de Estudio Section ============= */
@@ -79,7 +157,96 @@ div .portfolio__item:hover {
   transition: all 0.3s;
 }
 
-/* ============= Componentes ============= */
+/* ============= Media Querie ============= */
+/* Método 1 e.e */
+/* Método 2 a.e */
+/* ============= Services page ============= */
+.display-4 {
+  font-family: "geomanisbold";
+  font-size: 3.2em;
+  text-shadow: #1C1C22 0 0 0.1em, 0px 10px 10px rgba(0, 0, 0, 0.15), 0px 15px 15px rgba(0, 0, 0, 0.1), 0px 20px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* -- Petzbook -- */
+@media screen and (min-width: 375px) {
+  .carousel_petzbook img {
+    margin-left: -168%;
+  }
+}
+@media screen and (min-width: 768px) {
+  .carousel_petzbook img {
+    margin-left: -67%;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .carousel_petzbook img {
+    margin-left: -46%;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .carousel_petzbook img {
+    margin-left: -33%;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .carousel_petzbook img {
+    margin: auto;
+  }
+}
+
+/* -- Recetario -- */
+@media screen and (min-width: 375px) {
+  .carousel_book img {
+    margin-left: -120%;
+  }
+}
+@media screen and (min-width: 768px) {
+  .carousel_book img {
+    margin-left: -58%;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .carousel_book img {
+    margin-left: -44%;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .carousel_book img {
+    margin-left: -33%;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .carousel_book img {
+    margin: auto;
+  }
+}
+
+/* -- Elsword -- */
+@media screen and (min-width: 375px) {
+  .carousel_els img {
+    margin-left: -140%;
+  }
+}
+@media screen and (min-width: 768px) {
+  .carousel_els img {
+    margin-left: -67%;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .carousel_els img {
+    margin-left: -44%;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .carousel_els img {
+    margin-left: -33%;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .carousel_els img {
+    margin: auto;
+  }
+} /* ============= Componentes ============= */
 /* ============= Navbar ============= */
 .bd-navbar {
   background-color: #161513;
@@ -120,6 +287,13 @@ div .portfolio__item:hover {
   background: none;
 }
 
+@media screen and (max-width: 375px) {
+  .btn {
+    width: 90%;
+    margin: auto;
+  }
+}
+
 /* ============= Formulario ============= */
 div .form-control {
   background-color: #1C1C22;
@@ -142,5 +316,9 @@ div .textarea {
   color: #7B7B7B;
   font-size: 0.9em;
 }
+
+/* ============= Media Querie ============= */
+/* Método 1 e.e */
+/* Método 2 a.e */
 
 /*# sourceMappingURL=main.css.map */

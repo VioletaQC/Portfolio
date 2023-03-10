@@ -23,4 +23,9 @@
     @include button (.5em, 1px solid $white, 30px, $white, none);
 }
 
-  
+.btn {
+    @include mobile {
+        width: 90%;
+        margin: auto;
+    }
+}

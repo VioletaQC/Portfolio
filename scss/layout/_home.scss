@@ -2,7 +2,52 @@
 
 .hero {
     padding: 4em 0;
+
+    @include large {
+        padding: 1em 0;
+    }
+
+    @include mobile {
+        padding: 0.2em 0;
+    }
+
+    &__img {
+        @include large {
+            width: 320px;
+            height: auto;
+            padding-bottom: 1em;
+        }
+
+        @include tablet {
+            width: 280px;
+            height: auto;
+            padding-bottom: 1em;
+        }
+
+        @include mobile {
+            max-width: 60%;
+            margin-bottom: none;
+        }
+    }
 }
+
+/* ============= About Section ============= */
+
+.about {
+    &__text {
+        @include mobile {
+            text-align: center;
+            font-size: $text-min;
+        }
+    }
+
+    &__img {
+        @include mobile {
+            margin: auto;
+        }
+    }
+}
+
 
 /* ============= Casos de Estudio Section ============= */
 

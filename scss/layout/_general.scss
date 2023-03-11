@@ -27,6 +27,16 @@ a {
     background-color: $primary-black;
 }
 
+.pano_text {
+    font-family: $pano;
+    font-size: 2em;
+    color: $white;
+
+    &:hover {
+        color: $main-pink;
+    }
+}
+
 /* ============= Text ============= */ 
 
 .display-5 {

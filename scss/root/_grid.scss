@@ -1,0 +1,46 @@
+/* ============= Grid System ============= */
+$cols : 12;
+$gaps : 6px;
+
+.content {
+    width: 98%;
+    margin: 0 auto;
+    padding-left: calc($gaps / 2);
+    padding-right: calc($gaps / 2);
+}
+
+.gs-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-left: calc($gaps / -2);
+    margin-right: calc($gaps/-2);
+}
+
+[class*="column-"], .column {
+
+    max-width: 100%;
+    margin-left: calc($gaps / 2);
+    margin-right: calc($gaps / 2);
+}
+
+
+@mixin grid-system ($mq) {
+
+    .#{ $mq } {
+        flex: 1 0 0;
+    }
+
+    @for $col from 1 through $cols {
+        .#{ $mq }-#{ $col } {
+            flex:  0 0 calc((100% / $cols) * $col);
+            max-width: calc((100% / $cols) * $col);
+        }
+    }
+}
+
+@include grid-system(column);
+
+@media screen and (max-width: 768px) {
+    @include grid-system(sm-column)
+}

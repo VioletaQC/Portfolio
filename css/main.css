@@ -310,7 +310,7 @@ div .portfolio__item:hover {
 }
 
 /* -- Petzbook -- */
-@media screen and (min-width: 375px) {
+@media screen and (min-width: 395px) {
   .carousel_petzbook img {
     margin-left: -168%;
   }
@@ -337,7 +337,7 @@ div .portfolio__item:hover {
 }
 
 /* -- Recetario -- */
-@media screen and (min-width: 375px) {
+@media screen and (min-width: 395px) {
   .carousel_book img {
     margin-left: -120%;
   }
@@ -364,7 +364,7 @@ div .portfolio__item:hover {
 }
 
 /* -- Elsword -- */
-@media screen and (min-width: 375px) {
+@media screen and (min-width: 395px) {
   .carousel_els img {
     margin-left: -140%;
   }

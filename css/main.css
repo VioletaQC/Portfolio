@@ -160,7 +160,6 @@ li {
 a {
   text-decoration: none;
   color: #fff;
-  margin: 0 1em;
 }
 
 .bg__dark {
@@ -294,10 +293,6 @@ a {
 }
 
 /* ============= About page ============= */
-.oops img {
-  width: 30%;
-}
-
 /* ============= Portfolio Page ============= */
 div .portfolio__item:hover {
   transform: scale(1.03);
